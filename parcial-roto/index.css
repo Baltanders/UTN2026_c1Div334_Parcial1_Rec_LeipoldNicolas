@@ -1,0 +1,231 @@
+/* --- Estilos generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-optical-sizing: auto;
+    background-color: #161616 ;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* --- Estilos Header (encabezado) --- */
+header {
+    display: flex;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px #0000001a;
+    background-color: #000000 ;
+}
+
+#icono-principal {
+    max-width: 55px;
+    max-height: 55px;
+}
+
+#titulo-principal {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#listado-opciones {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-top: 15px;
+}
+
+a {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    color: gray;
+}
+ 
+/* --- Estilos Main (contenido) --- */
+#contenedor-contador-carrito {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+#contador-carrito {
+    background-color: #ca9013;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#cantidad-carrito {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.h2-separador {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#listado-hamburguesas,
+#listado-bebidas,
+#listado-tragos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.li-hamburguesa,
+.li-bebida,
+.li-tragos {
+    background-color: #000000 ;
+    color: #808080 ;
+    width: 250px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    border-left-width: 16px;
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-right-width: 16px;
+    border-radius: 5px;
+}
+
+.img-producto {
+    max-width: 100%;
+    max-height: 180px;
+}
+
+.nombre-producto {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.precio-producto{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ca9013 ;
+}
+
+.descripcion-producto {
+    min-height: 110px;
+    max-height: 110px;
+}
+
+.btn-sumar-a-carrito {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-restar-a-carrito {
+    padding: 5px;
+    margin-top: 15px;
+    background-color: red;
+    border-radius: 8px;
+    border: none;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-calorias {
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: #ca9013;
+    border-radius: 8px;
+    border: none;
+    width: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.btn-calorias:hover {
+    background-color: #a67810;
+}
+
+.calorias-producto {
+    color: #ca9013;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/* --- Estilos botones de ordenamiento --- */
+.contenedor-botones-ordenar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-ordenar-mayor,
+.btn-ordenar-menor {
+    padding: 10px 20px;
+    background-color: #ca9013;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ordenar-mayor:hover,
+.btn-ordenar-menor:hover {
+    background-color: #a67810;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    background-color: #000000 ;
+}
